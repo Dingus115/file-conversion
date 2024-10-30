@@ -18,10 +18,10 @@ namespace file_conversion
             byte[] configBuffer = { };
             List<byte[]> arraystuff = new List<byte[]>{ bytesToSend1, tempFile, configBuffer };             //string singleFile = @"\\DISTRSERVER\public-drive\Justin_files\MC92N0\\WM\UPDATE\CleanReg.bin";
             string[] address = {  };
-            address = File.ReadAllLines(@"C:\Users\Justin\Desktop\string of files\92WM65.txt");
+            address = File.ReadAllLines(@"\\DISTRSERVER\public-drive\Justin_files\Master files\Hex build lists\MC92N0\WM65.txt");
 
             string[] configs = {  };
-            configs = File.ReadAllLines(@"C:\Users\Justin\Desktop\string of files\92WM65configs.txt");
+            configs = File.ReadAllLines(@"\\DISTRSERVER\public-drive\Justin_files\Master files\Hex build lists\MC92N0\MC92configsWM65.txt");
             foreach (string config in configs) 
             {
                 string fileName = Path.GetFileName(config);
